@@ -7,69 +7,36 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<!--<audio controls>-->
-<!--  <source src="https://files.catbox.moe/5x4ep5.mp3" autoplay loop>-->
-<!--</audio>-->
-
-
-
 <body>
-  <!-- <div class="light" id="light-container"></div> -->
 
-<div class="ovali">
-    <h2 class="oval1 "></h2>
-    <h2 class="oval2 "></h2>
-    <h2 class="oval3 "></h2>
-    <h2 class="oval4 "></h2>
-    <h2 class="oval5 "></h2>
-    <h2 class="oval6 "></h2>
+<!-- ВЕРХ: лого -->
+<header class="top">
+  <img src="logo.png" alt="Flower" class="top-logo">
+</header>
 
 
+<!-- ССЫЛКИ -->
+<div class="links">
+  <a href="https://t.me/hatealinablog" target="_blank">telegram</a>
+  <a href="https://on.soundcloud.com/CNZcwIAQYF8arGMOUe" target="_blank">soundcloud</a>
+  <a href="https://payhip.com/l1lwyyyf1p" target="_blank">payhip</a>
 </div>
 
-  <header>
-    <img src="flowers.png" alt="Flowers Logo">
-  </header>
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="vecteezy_old-film-film-dust-and-scratches-grain-overlay-4k-free_46342783.mp4" type="video/mp4">
+</video>
 
-  <nav class="top">
-    <a href="index.html">главная</a>
-    <a href="download.html">скачивание</a>
-    <a href="https://en.wikipedia.org/wiki/Flower">вики</a>
-    <a href="scrapped.html">вырезанный контент</a>
-  </nav>
+<style>
+  .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* видео под всем */
+  }
+</style>
 
-  <div class="center">
-    <div>
-      <h1 class="text">Цветы отныне имеют сайт!</h1>
-        <img src="f.png" alt="Flower" class="FlowerIMG">
-
-    </div>    
-  </div>
-
-  <footer class="fotter">
-    создатели сайта: dj shamil и pillowy<br>
-    связаться: через анал
-  </footer>
-
-  <!-- <script>
-    const container = document.getElementById('light-container');
-
-    function createRay() {
-      const ray = document.createElement('div');
-      ray.classList.add('ray');
-      const angle = Math.random() * 30 - 15; // случайный наклон
-      const left = Math.random() * 100; // случайное положение
-      ray.style.left = left + '%';
-      ray.style.setProperty('--angle', angle + 'deg');
-      ray.style.animationDuration = 6 + Math.random() * 6 + 's';
-      container.appendChild(ray);
-
-      setTimeout(() => {
-        container.removeChild(ray);
-      }, 12000);
-    }
-
-    setInterval(createRay, 700);
-  </script> -->
 </body>
 </html>
